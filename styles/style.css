@@ -4,6 +4,8 @@ body{
 }
 *{
 	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
 header{
 /*	max-height: 600px;
@@ -12,6 +14,110 @@ header{
 .parallax{
 	/*background-image: url("../images/wal01.png");*/
 }
+
+/*Welcome message start*/
+.welcomeContainer
+{
+	position: absolute;
+	top: 5%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.welcometext1
+{
+	font-size: 50px;
+	color: #fff;
+	letter-spacing: 4px;
+	position: relative;
+
+	animation: myWelcomeTextFirst 3s 1;
+/*	animation-name: myWelcome;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-play-state: paused; */
+}
+
+.welcometext2
+{
+	font-size: 30px;
+	color: #008000;
+	position: relative;
+	/*visibility: hidden;*/
+
+	animation: myWelcomeTextSecond 3s 1;
+}
+
+@keyframes myWelcomeTextFirst
+{
+	0%
+	{
+		/*color: #000;*/
+		margin-top: 30px;
+		opacity: 0;
+	}
+	100%
+	{
+		/*letter-spacing: 25px;*/
+		margin-bottom: 0;
+		color: #fff;
+	}
+
+}
+
+@keyframes myWelcomeTextSecond
+{
+	0%
+	{
+		margin-top: -45px;
+		/*color: #000;*/
+		opacity: 0;
+		visibility: visible;
+	}
+	100%
+	{
+
+	}
+}
+
+nav
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+nav a
+{
+	text-decoration: none;
+	cursor: default;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+}
+nav ul{
+	padding: 0;
+}
+nav ol
+{
+	padding: 0;
+	width: 300px;
+	text-align: center;
+	margin-left: -150px;
+}
+
+nav a
+{
+	stroke: 2px white;
+}
+
+
 
 .firstsection{
 	position: relative;
