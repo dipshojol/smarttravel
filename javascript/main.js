@@ -1,6 +1,11 @@
 // alert("this is my js")
 $(document).ready(function() {
 
+	// appding paralax into html
+	var paralax = ""
+
+	// $(".parallax").append('<section class="firstsection"><h1 class="hi">Hi</h1></section>');
+
     $(".welcometext1").css({
         'animation': 'myWelcomeTextFirst 3s 1'
     });

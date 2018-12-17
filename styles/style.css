@@ -1,6 +1,5 @@
 body {
     border: 1px solid gray;
-    /*background-color: #A9A9A9;*/
 }
 
 * {
@@ -30,9 +29,6 @@ header nav .homeButton{
   	vertical-align: center;
 }
 header nav .homeButton a{
-/*	text-decoration: none;
-	pointer-events: none;
-*/
 	color: #fff;
 	margin: auto;
 }
@@ -48,15 +44,6 @@ header nav li{
     /*background-image: url("../images/wal01.png");*/
 }
 
-/*Welcome message start*/
-/*.welcomeMain{
-	position: absolute;
-	background: green;
-	opacity: .5;
-	width: 100%;
-	height: 100%;
-	top: 0;
-}*/
 .welcomeContainer {
     position: absolute;
     top: 5%;
@@ -87,27 +74,11 @@ header nav li{
 	animation-play-state: paused; */
 }
 
-/*.wecometextLine {
-    width: 450px;
-    height: 10px;
-    	position: absolute;
-	left: 50%;
-	top: 66;
-	margin-left: -225px;
-    margin: 55px auto 0;
-
-    animation: myWelcomeUnderline 3s 1;
-}*/
-
 .welcometext2 {
-    /*border: 1px solid white;*/
     font-size: 30px;
     color: #fff;
     position: relative;
     top: 50;
-    /*visibility: hidden;*/
-    /*visibility: hidden;*/
-
     animation: myWelcomeTextSecond 3s 1;
 }
 
@@ -125,21 +96,6 @@ header nav li{
     }
 
 }
-
-/*@keyframes myWelcomeUnderline {
-    0% {
-        color: #000;
-        width: 0;
-
-    }
-
-    100% {
-        /*letter-spacing: 25px;*/
-        /*margin-bottom: 0;
-		color: #fff;*/
-    /*}
-
-}*/
 
 @keyframes myWelcomeTextSecond {
     0%{
@@ -160,19 +116,25 @@ header nav li{
         visibility: hidden;*/
     }
 }
-
-.firstsection {
-    position: relative;
+.parallax{
+	border: 1px solid red;
+	width: 1000px;
+	height: 200px;
+/*    background-image: url("../images/wal01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;*/
+}
+.firstsection{
+/*	background-image: url("../images/wal01.jpg");
+	position: relative;
     border: 1px solid gray;
-    /*background-color: #778899;*/
-    background-image: url("../images/wal01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-    /*display: flex;*/
-    height: 600px;
-    /*align-items: center;*/
+    height: 600px;*/
 }
 
 .hi {
