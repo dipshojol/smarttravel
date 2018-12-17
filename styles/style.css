@@ -116,25 +116,19 @@ header nav li{
         visibility: hidden;*/
     }
 }
-.parallax{
-	border: 1px solid red;
-	width: 1000px;
-	height: 200px;
-/*    background-image: url("../images/wal01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;*/
-}
-.firstsection{
-/*	background-image: url("../images/wal01.jpg");
-	position: relative;
+
+.firstsection {
+    position: relative;
     border: 1px solid gray;
+    /*background-color: #778899;*/
+    background-image: url("../images/wal01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-    height: 600px;*/
+    /*display: flex;*/
+    height: 600px;
+    /*align-items: center;*/
 }
 
 .hi {
