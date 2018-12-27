@@ -11,33 +11,54 @@ body {
 header nav{
 	position: fixed;
 	z-index: 1;
-	top:0;
+	top:100;
 	right: 0;
+    color: white;
+    background: gray;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 0 0 50%;
+    cursor: pointer;
 }
-
-header nav .homeButton{
-	position: absolute;
-	z-index: 1;
-	right: 3;
-	top: 100;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	height: 100px;
-  	width: 100px;
-  	display: inline-block;
-  	text-align: center;
-  	vertical-align: center;
+.hamburger{
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    border-radius: 10%;
+    transition: .5s;
 }
-header nav .homeButton a{
-	color: #fff;
-	margin: auto;
+.nav-wrapper .hamburger::after, .nav-wrapper .hamburger::before {
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
 }
-header nav ul{
-	list-style-type: none;
+.nav-wrapper .hamburger::before{
+    top: -6;
 }
-
-header nav li{
-	/*padding: 40px 140px 40px 40px;*/
+.nav-wrapper .hamburger::after{
+    top: 6;
+}
+.nav-wrapper.navClicked .hamburger{
+    background: rgba(0,0,0,0);
+}
+.nav-wrapper.navClicked .hamburger::before
+{
+    transform: rotate(45deg);
+    top: 0;
+}
+.nav-wrapper.navClicked .hamburger::after
+{
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 .parallax {
@@ -78,8 +99,9 @@ header nav li{
     font-size: 30px;
     color: #fff;
     position: relative;
-    top: 50;
-    animation: myWelcomeTextSecond 3s 1;
+    top: 25;
+    opacity: 0;
+    /*animation: myWelcomeTextSecond 3s 1;*/
 }
 
 @keyframes myWelcomeTextFirst {
