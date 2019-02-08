@@ -1,6 +1,6 @@
 // alert("this is my js")
 $(document).ready(function() {
-    $('nav').click(function(){
+    $('nav').click(function() {
         $('.nav-wrapper').toggleClass('navClicked');
     });
     $(".welcometext1").animate({
@@ -33,10 +33,25 @@ $(document).ready(function() {
         $('.hi').css({
             'transform': 'translate(0px, ' + wScroll / 2 + '%)'
         });
+
+
+
+        // $('.parallax-me').scrollBy(wScroll, 0);
     });
 
-    // classwelcome.on('click', '.selector', function(event) {
-    // event.preventDefault();
-    /* Act on the event */
+    // horizontal scroller
+    // $('.parallax-windows').on('mousewheel', function(e, delta){
+    //     // console.log(delta);
+    //     this.scrollLeft -= (delta * 40);
+    //     e.preventDefault();
+
+    // })
+
+    // $('.parallax-windows').mousewheel(function(e, delta) {
+    //     this.scrollLeft -= (delta * 40);
+    //     e.preventDefault();
+    //     console.log(delta);
+
+    // });
 
 });

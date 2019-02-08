@@ -1,18 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
 body {
     border: 1px solid gray;
+    background: #DCDCDC;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
-header nav{
-	position: fixed;
-	z-index: 1;
-	top:100;
-	right: 0;
+header {
+    position: fixed;
+}
+
+main {
+    margin-top: 44px;
+}
+
+nav .global-nav {
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    background-color: #333;
+}
+
+nav .global-nav ul {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    height: 44px;
+    justify-content: center;
+}
+
+.global-nav ul li {
+    list-style: none;
+    /*text-decoration: none;*/
+    cursor: pointer;
+    margin: 0 25px;
+
+}
+
+.global-nav ul li:first-child {
+    margin: 7px 20px;
+}
+
+.my-photo {
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.global-nav ul li a {
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 2.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    width: 1.85714em;
+}
+
+main {
+    top: 44px;
+}
+
+.parallax-wrapper {
+    width: auto;
+    height: 600px;
+    border: 1px solid #696969;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.parallax-windows {
+    width: 100%;
+    /*height: 100%;*/
+    background-color: red;
+    display: inline-block;
+}
+
+.parallax-windows img {
+    height: 600px;
+}
+
+header nav .nav-wrapper {
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    right: 0;
     color: white;
     background: gray;
     border-left: 1px solid;
@@ -23,7 +101,8 @@ header nav{
     border-radius: 50% 0 0 50%;
     cursor: pointer;
 }
-.hamburger{
+
+.hamburger {
     width: 25px;
     height: 3px;
     background: #fff;
@@ -33,30 +112,35 @@ header nav{
     border-radius: 10%;
     transition: .5s;
 }
-.nav-wrapper .hamburger::after, .nav-wrapper .hamburger::before {
-    content:'';
+
+.nav-wrapper .hamburger::after,
+.nav-wrapper .hamburger::before {
+    content: '';
     position: absolute;
     width: 25px;
     height: 3px;
     background: #fff;
     transition: .5s;
 }
-.nav-wrapper .hamburger::before{
+
+.nav-wrapper .hamburger::before {
     top: -6;
 }
-.nav-wrapper .hamburger::after{
+
+.nav-wrapper .hamburger::after {
     top: 6;
 }
-.nav-wrapper.navClicked .hamburger{
-    background: rgba(0,0,0,0);
+
+.nav-wrapper.navClicked .hamburger {
+    background: rgba(0, 0, 0, 0);
 }
-.nav-wrapper.navClicked .hamburger::before
-{
+
+.nav-wrapper.navClicked .hamburger::before {
     transform: rotate(45deg);
     top: 0;
 }
-.nav-wrapper.navClicked .hamburger::after
-{
+
+.nav-wrapper.navClicked .hamburger::after {
     transform: rotate(-45deg);
     top: 0;
 }
@@ -65,9 +149,13 @@ header nav{
     /*background-image: url("../images/wal01.png");*/
 }
 
+.welcomeMain {
+    /*position: absolute;*/
+}
+
 .welcomeContainer {
     position: absolute;
-    top: 5%;
+    top: 15%;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
@@ -85,14 +173,14 @@ header nav{
     opacity: 0;
 
     /*animation: myWelcomeTextFirst 3s 1;*/
-    /*	animation-name: myWelcome;
-	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
-	animation-delay: 0s;
-	animation-iteration-count: 1;
-	animation-direction: alternate;
-	animation-fill-mode: forwards;
-	animation-play-state: paused; */
+    /*  animation-name: myWelcome;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; */
 }
 
 .welcometext2 {
@@ -120,20 +208,21 @@ header nav{
 }
 
 @keyframes myWelcomeTextSecond {
-    0%{
+    0% {
         margin-top: -30px;
         color: #000;
         opacity: 0;
         visibility: visible;
     }
-/*    50%{
-		margin-top: 0px;
+
+    /*    50%{
+        margin-top: 0px;
         opacity: 1;
         visibility: visible;
     }*/
 
     100% {
-/*        margin-top: -30px;
+        /*        margin-top: -30px;
         opacity: 0;
         visibility: hidden;*/
     }
@@ -163,7 +252,7 @@ header nav{
     font-size: 80px;
     color: #F0FFF0;
     /*padding: 100px;*/
-    /*margin-top: auto;	*/
+    /*margin-top: auto; */
 
 }
 
