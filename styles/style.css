@@ -262,7 +262,9 @@ header nav .nav-wrapper {
     height: 1089px;
 }
 
-@media screen and (max-width: 425){
+/* RESPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 425px){
     nav .global-nav {
         background-color: #a01818;
     }
