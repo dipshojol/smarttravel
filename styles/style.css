@@ -45,6 +45,12 @@ nav .global-nav ul {
     margin: 7px 20px;
 }
 
+@media screen and (max-width: 425){
+    nav .global-nav {
+        background-color: #a01818;
+    }
+}
+
 .my-photo {
     border: 1px solid white;
     width: 30px;
