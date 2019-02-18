@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 body {
-    border: 1px solid gray;
+    border: 1px solid red;
     background: #DCDCDC;
 }
 
@@ -46,6 +46,7 @@ nav .global-nav ul {
 }
 
 
+<<<<<<< HEAD
 @media only screen and (max-width: 767px) {
 .global-nav {
     padding: 0;
@@ -61,6 +62,8 @@ nav .global-nav ul {
     color: red;
   }
 }
+=======
+>>>>>>> 7bc02c6beebd79555b959fcc3295c2c4440a778f
 
 .my-photo {
     border: 1px solid white;
@@ -275,4 +278,12 @@ header nav .nav-wrapper {
 
 .paragraph {
     height: 1089px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 425px){
+    nav .global-nav {
+        background-color: #a01818;
+    }
 }
