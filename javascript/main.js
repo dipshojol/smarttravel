@@ -1,8 +1,10 @@
 // alert("this is my js")
 $(document).ready(function() {
-    $('nav').click(function() {
+    $('.hamburger').click(function() {
         $('.nav-wrapper').toggleClass('navClicked');
     });
+
+    // welcome animation start
     $(".welcometext1").animate({
         color: '#000',
         top: '0px',
@@ -25,9 +27,9 @@ $(document).ready(function() {
             top: '25',
             opacity: 0
         }, 2000)
-        // Animation complete.
     });
-
+    
+// welcome animation end
     $(window).scroll(function() {
         var wScroll = $(this).scrollTop();
         $('.hi').css({

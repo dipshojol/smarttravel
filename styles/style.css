@@ -1,111 +1,87 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
-body {
-    border: 1px solid gray;
-    background: #DCDCDC;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
-header {
-    position: fixed;
+body {
+    background: #778899;
+    max-width: 2560px;
+    margin: auto;
 }
 
 main {
-    margin-top: 44px;
+    border: 1px solid;
+    margin-top: 48px;
 }
 
-nav .global-nav {
+/*  navigation start  */
+
+nav{
     position: fixed;
     width: 100%;
-    height: 48px;
+    height: 61px;
     background-color: #333;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav .nav-wrapper{
+    display: grid;
+    grid-template-columns: 5fr 25fr;
+    margin: auto;
+    width: 1000px;
 }
 
 nav .global-nav ul {
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    height: 44px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
 }
-
-.global-nav ul li {
-    list-style: none;
-    /*text-decoration: none;*/
-    cursor: pointer;
-    margin: 0 25px;
-
-}
-
-.global-nav ul li:first-child {
-    margin: 7px 20px;
-}
-
-
-
-
+/**/
 .my-photo {
     border: 1px solid white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.global-nav ul li a {
-    text-decoration: none;
-    font-size: 21px;
-    line-height: 2.14286;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    color: #fff;
-    font-family: 'Rajdhani', sans-serif;
-    width: 1.85714em;
-}
-
-main {
-    top: 44px;
-}
-
-.parallax-wrapper {
-    width: auto;
-    height: 600px;
-    border: 1px solid #696969;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-.parallax-windows {
-    width: 100%;
-    /*height: 100%;*/
-    background-color: red;
-    display: inline-block;
-}
-
-.parallax-windows img {
-    height: 600px;
-}
-
-header nav .nav-wrapper {
-    z-index: 1;
-    color: white;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    /*position: fixed;*/
+    margin: 4px;
+    overflow: hidden;
+}
+.my-photo img{
+    height: 50px;
+}
+.global-nav ul li {
+    list-style: none;
     cursor: pointer;
+    margin: 0 25px;
+}
+
+
+.navClicked ul{
+    display: block !important;
+    position: absolute; 
+    margin-top: 65px;
+    width: 100%;
+    margin-left: -22px;
+}
+
+.navClicked ul li{
+    width: 100%;
+    background: gray;
+    border-bottom: 1px solid;
+    padding-left: 22px;
 }
 
 .hamburger {
-    position: relative;
+    display: none;
     width: 25px;
     height: 3px;
     background: #fff;
-    top: 50%;
-    right: -30%;
     border-radius: 10%;
     transition: .5s;
+    margin: 28px;
 }
 
 .nav-wrapper .hamburger::after,
@@ -140,25 +116,57 @@ header nav .nav-wrapper {
     margin: 0;
 }
 
+.global-nav ul li a {
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 3;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    width: 1.85714em;
+}
+
+.parallax-wrapper {
+    width: auto;
+    height: 600px;
+    border: 1px solid #696969;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.parallax-windows {
+    width: 100%;
+    /*height: 100%;*/
+    background-color: red;
+    display: inline-block;
+}
+
+.parallax-windows img {
+    height: 600px;
+}
+
+
+
 .parallax {
     /*background-image: url("../images/wal01.png");*/
 }
 
 .welcomeMain {
-    /*position: absolute;*/
+    position: fixed;
+    margin-top: 30px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
 }
 
 .welcomeContainer {
-    position: absolute;
-    top: 15%;
-    width: 100%;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
 }
 
 .welcometext1 {
-    /*border: 1px solid white;*/
     font-size: 50px;
     color: #fff;
     letter-spacing: 4px;
@@ -232,9 +240,7 @@ header nav .nav-wrapper {
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-    /*display: flex;*/
     height: 600px;
-    /*align-items: center;*/
 }
 
 .hi {
@@ -255,18 +261,17 @@ header nav .nav-wrapper {
     height: 1089px;
 }
 
-@media only screen and (max-width: 767px) {
-.global-nav {
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-}
+/* RESPONSIVE MEDIA QUERIES */
 
-@media only screen and (max-width: 600px) {
-  body {
-    color: red;
-  }
+@media screen and (max-width: 1030px){
+    nav .global-nav ul{
+        display: none;
+    }
+    .my-photo{
+        position: absolute;
+        right: 0;
+    }
+    header nav .hamburger {
+        display: block;
+    }
 }
