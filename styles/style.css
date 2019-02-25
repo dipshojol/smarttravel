@@ -6,14 +6,18 @@
 }
 
 body {
-    background: #778899;
-    max-width: 2560px;
+    background: #ccc;
+    max-width: 1080px;
     margin: auto;
 }
 
 main {
-    border: 1px solid;
-    margin-top: 60px;
+/*    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;*/
+    /*margin-top: 60px;*/
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
 }
 
 /*  navigation start  */
@@ -21,11 +25,12 @@ main {
 nav{
     position: fixed;
     width: 100%;
-    height: 61px;
+    height: 50px;
     background-color: #333;
     top: 0;
     left: 0;
     z-index: 1;
+    opacity: .6;
 }
 
 nav .nav-wrapper{
@@ -37,13 +42,13 @@ nav .nav-wrapper{
 
 nav .global-nav ul {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
 }
 /**/
 .my-photo {
     border: 1px solid white;
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     /*position: fixed;*/
     margin: 4px;
@@ -121,69 +126,67 @@ nav .global-nav ul {
 }
 
 .global-nav ul li a {
+    text-align: center;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 21px;
-    line-height: 3.14286;
+    font-size: 16px;
+    line-height: 3.2;
     font-weight: 400;
     letter-spacing: -.01em;
     color: #fff;
     font-family: 'Rajdhani', sans-serif;
-    width: 3.85714em;
+    /*width: 3.85714em;*/
     display: block;
 }
 
+/* Parallax container*/
+
 .parallax-wrapper {
+    position: relative;
     width: auto;
-    height: 600px;
+    height: auto;
     /*border: 1px solid #696969;*/
     overflow: auto;
     white-space: nowrap;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
 }
 
 .parallax-windows {
     width: 100%;
     display: inline-block;
-    height: 1000px;
 }
 
 .parallax-windows img {
-    height: 1200px;
+    width: 100%;
 }
-
-.parallax-windows img:last-child{
+/*i will need it when i use multiple img for parralax*/
+/*.parallax-windows img:last-child{
     position: absolute;
     top: 474px;
     left: 0;
     height: 189px;
-}
-.parallax-wrapper div {
+}*/
+/*.parallax-wrapper div {
  max-width: 100%;
- overflow: scroll;
  width: 100%;
  display: block;
-}
+}*/
 
 
 .parallax {
     /*background-image: url("../images/wal01.png");*/
 }
 
-.welcomeMain {
-    position: fixed;
-    margin-top: 30px;
-    left: 50%;
-    width: 600px;
-    margin-left: -300px;
-}
+/* animated message */
 
 .welcomeContainer {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 700;
     text-align: center;
 }
 
 .welcometext1 {
+    font-family: 'Concert One', cursive;
     font-size: 50px;
     color: #fff;
     letter-spacing: 4px;
@@ -204,13 +207,25 @@ nav .global-nav ul {
 }
 
 .welcometext2 {
-    font-size: 30px;
+    font-family: 'Concert One', cursive;
+    font-size: 22px;
     color: #fff;
     position: relative;
-    top: 25;
     opacity: 0;
     /*animation: myWelcomeTextSecond 3s 1;*/
 }
+
+
+
+.welcomeMain {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+}
+
+
 
 @keyframes myWelcomeTextFirst {
     0% {

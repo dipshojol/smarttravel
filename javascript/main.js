@@ -9,25 +9,27 @@ $(document).ready(function() {
         color: '#000',
         top: '0px',
         opacity: 1
-    }, 4000, function() {
-        $(".welcometext1").animate({
-            color: '#fff',
-            top: '25px',
-            opacity: 0
-        }, 1000)
-    });
+    }, 3000//, function() {
+    //     $(".welcometext1").animate({
+    //         color: '#fff',
+    //         top: '25px',
+    //         opacity: 0
+    //     }, 1000)
+    // }
+    );
 
     $(".welcometext2").animate({
         color: '#000',
-        top: '50',
+        top: '65',
         opacity: 1
-    }, 4000, function() {
-        $(".welcometext2").animate({
-            color: '#fff',
-            top: '25',
-            opacity: 0
-        }, 2000)
-    });
+    }, 3000//, function() {
+    //     $(".welcometext2").animate({
+    //         color: '#fff',
+    //         top: '25',
+    //         opacity: 0
+    //     }, 2000)
+    // }
+    );
     
 // welcome animation end
     $(window).scroll(function() {
@@ -42,12 +44,12 @@ $(document).ready(function() {
     });
 
     // horizontal scroller
-    $('.parallax-wrapper div').on('mousewheel', function(e, delta){
-        // console.log(delta);
-        this.scrollLeft -= (delta * 1);
-        e.preventDefault();
+    // $('.parallax-wrapper div').on('mousewheel', function(e, delta){
+    //     // console.log(delta);
+    //     this.scrollLeft -= (delta * 1);
+    //     e.preventDefault();
 
-        console.log(delta);
+    //     console.log(delta);
 
-    })
+    // })
 });
