@@ -225,6 +225,40 @@ nav .global-nav ul {
     margin-left: -450px;
 }
 
+/* How it works */
+
+.hiw{
+    width: 90%;
+    margin: auto;
+}
+
+.hiw .hiw-wrapper{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.hiw .hiw-wrapper span{
+    line-height: 12em;
+}
+
+.hiw .hiw-wrapper .svg{
+
+}
+
+.hiw .hiw-wrapper .hiw-process{
+    border: 1px solid;
+        padding: 30px;
+}
+
+.hiw .hiw-wrapper .hiw-symble{
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: auto;
+}
 
 
 @keyframes myWelcomeTextFirst {

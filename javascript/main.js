@@ -1,5 +1,8 @@
 // alert("this is my js")
 $(document).ready(function() {
+    // manipulation of svg
+    $('.svg').svgInject();
+
     $('.hamburger').click(function() {
         $('.nav-wrapper').toggleClass('navClicked');
     });
