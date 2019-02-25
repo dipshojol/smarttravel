@@ -42,18 +42,12 @@ $(document).ready(function() {
     });
 
     // horizontal scroller
-    // $('.parallax-windows').on('mousewheel', function(e, delta){
-    //     // console.log(delta);
-    //     this.scrollLeft -= (delta * 40);
-    //     e.preventDefault();
+    $('.parallax-wrapper div').on('mousewheel', function(e, delta){
+        // console.log(delta);
+        this.scrollLeft -= (delta * 1);
+        e.preventDefault();
 
-    // })
+        console.log(delta);
 
-    // $('.parallax-windows').mousewheel(function(e, delta) {
-    //     this.scrollLeft -= (delta * 40);
-    //     e.preventDefault();
-    //     console.log(delta);
-
-    // });
-
+    })
 });

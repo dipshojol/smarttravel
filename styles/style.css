@@ -13,7 +13,7 @@ body {
 
 main {
     border: 1px solid;
-    margin-top: 48px;
+    margin-top: 60px;
 }
 
 /*  navigation start  */
@@ -52,19 +52,23 @@ nav .global-nav ul {
 .my-photo img{
     height: 50px;
 }
+
+
 .global-nav ul li {
     list-style: none;
     cursor: pointer;
-    margin: 0 25px;
+    /*margin: 0 25px;*/
 }
-
+.global-nav ul li a:hover{
+    color: #D3D3D3;
+}
 
 .navClicked ul{
     display: block !important;
     position: absolute; 
     margin-top: 65px;
     width: 100%;
-    margin-left: -22px;
+    /*margin-left: -22px;*/
 }
 
 .navClicked ul li{
@@ -119,33 +123,46 @@ nav .global-nav ul {
 .global-nav ul li a {
     text-decoration: none;
     font-size: 21px;
-    line-height: 3;
+    line-height: 3.14286;
     font-weight: 400;
     letter-spacing: -.01em;
     color: #fff;
     font-family: 'Rajdhani', sans-serif;
-    width: 1.85714em;
+    width: 3.85714em;
+    display: block;
 }
 
 .parallax-wrapper {
     width: auto;
     height: 600px;
-    border: 1px solid #696969;
+    /*border: 1px solid #696969;*/
     overflow: auto;
     white-space: nowrap;
+    margin-bottom: 200px;
 }
 
 .parallax-windows {
     width: 100%;
-    /*height: 100%;*/
-    background-color: red;
     display: inline-block;
+    height: 1000px;
 }
 
 .parallax-windows img {
-    height: 600px;
+    height: 1200px;
 }
 
+.parallax-windows img:last-child{
+    position: absolute;
+    top: 474px;
+    left: 0;
+    height: 189px;
+}
+.parallax-wrapper div {
+ max-width: 100%;
+ overflow: scroll;
+ width: 100%;
+ display: block;
+}
 
 
 .parallax {
@@ -233,7 +250,7 @@ nav .global-nav ul {
 
 .firstsection {
     position: relative;
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     /*background-color: #778899;*/
     background-image: url("../images/wal01.jpg");
     background-repeat: no-repeat;
