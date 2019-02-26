@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+    max-width: 1080px;
+    margin: auto;
+}
+
+main {
+/*    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;*/
+    /*margin-top: 60px;*/
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
+}
+
+/*  navigation start  */
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .7;
+}
+
+nav .nav-wrapper{
+    display: grid;
+    grid-template-columns: 5fr 25fr;
+    margin: auto;
+    width: 1000px;
+}
+
+nav .global-nav ul {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+/**/
+.my-photo {
+    border: 1px solid white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    /*position: fixed;*/
+    margin: 4px;
+    overflow: hidden;
+}
+.my-photo img{
+    height: 50px;
+}
+
+
+.global-nav ul li {
+    list-style: none;
+    cursor: pointer;
+    /*margin: 0 25px;*/
+}
+.global-nav ul li a:hover{
+    color: #D3D3D3;
+}
+
+.navClicked ul{
+    display: block !important;
+    position: absolute; 
+    margin-top: 65px;
+    width: 100%;
+    /*margin-left: -22px;*/
+}
+
+.navClicked ul li{
+    width: 100%;
+    background: gray;
+    border-bottom: 1px solid;
+    padding-left: 22px;
+}
+
+.hamburger {
+    display: none;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 10%;
+    transition: .5s;
+    margin: 28px;
+}
+
+.nav-wrapper .hamburger::after,
+.nav-wrapper .hamburger::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+}
+
+.hamburger::before {
+    margin-top: -6px;
+}
+
+.hamburger::after {
+    margin-top: 6px;
+}
+
+.nav-wrapper.navClicked .hamburger {
+    background: rgba(0, 0, 0, 0);
+}
+
+.nav-wrapper.navClicked .hamburger::before {
+    transform: rotate(45deg);
+    margin: 0;
+}
+
+.nav-wrapper.navClicked .hamburger::after {
+    transform: rotate(-45deg);
+    margin: 0;
+}
+
+.global-nav ul li a {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 3.2;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    /*width: 3.85714em;*/
+    display: block;
+}
+
+/* Parallax container*/
+
+.parallax-wrapper {
+    position: relative;
+    width: auto;
+    height: auto;
+    /*border: 1px solid #696969;*/
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.parallax-windows {
+    width: 100%;
+    display: inline-block;
+}
+
+.parallax-windows img {
+    width: 100%;
+}
+/*i will need it when i use multiple img for parralax*/
+/*.parallax-windows img:last-child{
+    position: absolute;
+    top: 474px;
+    left: 0;
+    height: 189px;
+}*/
+/*.parallax-wrapper div {
+ max-width: 100%;
+ width: 100%;
+ display: block;
+}*/
+
+
+.parallax {
+    /*background-image: url("../images/wal01.png");*/
+}
+
+/* animated message */
+
+.welcomeContainer {
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+}
+
+.welcometext1 {
+    font-family: 'Concert One', cursive;
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 4px;
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    opacity: 0;
+
+    /*animation: myWelcomeTextFirst 3s 1;*/
+    /*  animation-name: myWelcome;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; */
+}
+
+.welcometext2 {
+    font-family: 'Concert One', cursive;
+    font-size: 22px;
+    color: #fff;
+    position: relative;
+    opacity: 0;
+    /*animation: myWelcomeTextSecond 3s 1;*/
+}
+
+
+
+.welcomeMain {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+}
+
+/* How it works */
+
+.hiw{
+    width: 90%;
+    margin: auto;
+        font-family: 'Rajdhani', sans-serif;
+
+}
+
+.hiw .hiw-wrapper{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.hiw .hiw-wrapper span{
+    line-height: 15em;
+}
+
+.hiw .hiw-wrapper .svg{
+    height: 50px;
+}
+
+.hiw .hiw-wrapper .hiw-process{
+    border: 1px solid;
+        padding: 30px;
+}
+
+.hiw .hiw-wrapper .hiw-symble{
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.hiw .hiw-process h3{
+    line-height: 3em;
+    font-size: 27px;
+}
+
+@keyframes myWelcomeTextFirst {
+    0% {
+        /*color: #000;
+        margin-top: 30px;
+        opacity: 0;*/
+    }
+
+    100% {
+        /*letter-spacing: 25px;*/
+        /*margin-bottom: 0;
+        color: #fff;*/
+    }
+
+}
+
+@keyframes myWelcomeTextSecond {
+    0% {
+        margin-top: -30px;
+        color: #000;
+        opacity: 0;
+        visibility: visible;
+    }
+
+    /*    50%{
+        margin-top: 0px;
+        opacity: 1;
+        visibility: visible;
+    }*/
+
+    100% {
+        /*        margin-top: -30px;
+        opacity: 0;
+        visibility: hidden;*/
+    }
+}
+
+.firstsection {
+    position: relative;
+    /*border: 1px solid gray;*/
+    /*background-color: #778899;*/
+    background-image: url("../images/wal01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 600px;
+}
+
+.hi {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    background-color: green;
+    /*text-align: center;*/
+    line-height: 100px;
+    font-size: 80px;
+    color: #F0FFF0;
+    /*padding: 100px;*/
+    /*margin-top: auto; */
+
+}
+
+.paragraph {
+    height: 1089px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 1030px){
+    nav .global-nav ul{
+        display: none;
+    }
+    .my-photo{
+        position: absolute;
+        right: 0;
+    }
+    header nav .hamburger {
+        display: block;
+    }
+}
