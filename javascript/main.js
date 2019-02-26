@@ -37,8 +37,8 @@ $(document).ready(function() {
 // welcome animation end
     $(window).scroll(function() {
         var wScroll = $(this).scrollTop();
-        $('.hi').css({
-            'transform': 'translate(0px, ' + wScroll / 2 + '%)'
+        $('.welcomeMain').css({
+            'transform': 'translate(0px, ' + wScroll / 1 + '%)'
         });
 
 
