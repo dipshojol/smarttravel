@@ -30,7 +30,7 @@ nav{
     top: 0;
     left: 0;
     z-index: 1;
-    opacity: .6;
+    opacity: .7;
 }
 
 nav .nav-wrapper{
@@ -230,6 +230,8 @@ nav .global-nav ul {
 .hiw{
     width: 90%;
     margin: auto;
+        font-family: 'Rajdhani', sans-serif;
+
 }
 
 .hiw .hiw-wrapper{
@@ -240,11 +242,11 @@ nav .global-nav ul {
 }
 
 .hiw .hiw-wrapper span{
-    line-height: 12em;
+    line-height: 15em;
 }
 
 .hiw .hiw-wrapper .svg{
-
+    height: 50px;
 }
 
 .hiw .hiw-wrapper .hiw-process{
@@ -260,6 +262,10 @@ nav .global-nav ul {
     margin: auto;
 }
 
+.hiw .hiw-process h3{
+    line-height: 3em;
+    font-size: 27px;
+}
 
 @keyframes myWelcomeTextFirst {
     0% {
