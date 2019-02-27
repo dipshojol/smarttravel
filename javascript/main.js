@@ -40,11 +40,26 @@ $(document).ready(function() {
         $('.welcomeMain').css({
             'transform': 'translate(0px, ' + wScroll / 1 + '%)'
         });
+        if (wScroll > 1) {
+        $('nav').css({
+            'opacity': wScroll/1000 + .6
+        })
+    }else{
+        $('nav').css({
+            'opacity': '.6'
+        })
+    }
 
 
 
         // $('.parallax-me').scrollBy(wScroll, 0);
     });
+
+    // $('.global-nav ul.main-manu>li').click(function() {
+    //     var myli = $(this) + $('li');
+    //     $(myli).toggleClass('active');
+    //     console.log(myli);
+    // });
 
     // horizontal scroller
     // $('.parallax-wrapper div').on('mousewheel', function(e, delta){

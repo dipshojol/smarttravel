@@ -36,11 +36,13 @@ nav .nav-wrapper {
     width: 1000px;
 }
 
-nav .global-nav ul {
+nav .global-nav ul.main-manu {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
 }
-
+nav .global-nav ul.main-manu >li{
+    text-align: center;
+}
 /**/
 .my-photo {
     border: 1px solid white;
@@ -63,8 +65,12 @@ nav .global-nav ul {
     /*margin: 0 25px;*/
 }
 
-.global-nav ul li a:hover {
+.global-nav ul li:hover {
     color: #D3D3D3;
+}
+
+.global-nav ul li a:hover{
+    color: red;
 }
 
 .navClicked ul {
@@ -81,6 +87,60 @@ nav .global-nav ul {
     border-bottom: 1px solid;
     padding-left: 22px;
 }
+
+.global-nav ul li, .global-nav ul li a{
+    /*text-align: center;*/
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 3.2;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/*Drop down manu*/
+
+nav .global-nav ul li ul{
+    position: absolute;
+    width: 200px;
+    margin-top: 0px;
+}
+
+nav .global-nav ul li ul li{
+    display: none;
+}
+
+nav .global-nav ul li:hover ul.inner-manu li{
+    display: block;
+    animation: manu-dropdown 600ms ease-in-out forwards;
+}
+
+@keyframes manu-dropdown{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+nav .global-nav ul li ul li{
+    line-height: 40px;
+    background-color: #000;
+    border-top: 1px solid gray;
+    padding-left: 20px;
+}
+nav .inner-manu li:last-child{
+    border-radius: 0 0 3px 3px;
+}
+
+nav .inner-manu li:first-child{
+    border-top: 0px solid;
+}
+
+
 
 .hamburger {
     display: none;
@@ -124,20 +184,6 @@ nav .global-nav ul {
     margin: 0;
 }
 
-.global-nav ul li a {
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 3.2;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    color: #fff;
-    font-family: 'Rajdhani', sans-serif;
-    /*width: 3.85714em;*/
-    display: block;
-}
-
 /* Parallax container*/
 
 .parallax-wrapper {
@@ -178,6 +224,12 @@ nav .global-nav ul {
 }
 
 /* animated message */
+
+.para01{
+    width: auto !important;
+    height: 300px;
+    position: absolute;
+}
 
 .welcomeContainer {
     text-transform: capitalize;
@@ -233,7 +285,13 @@ nav .global-nav ul {
     font-family: 'Rajdhani', sans-serif;
     padding: 50px;
 }
-
+.hiw .hiw-text p{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize; 
+    font-family: 'Days One', sans-serif;
+    padding-bottom: 20px;
+}
 .hiw .hiw-wrapper {
     border: 1px solid #b4b4b4;
     display: grid;
