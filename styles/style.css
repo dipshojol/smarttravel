@@ -37,21 +37,26 @@ nav .nav-wrapper {
 }
 
 nav .global-nav ul.main-manu {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    display: ;
+    /*display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;*/
 }
 nav .global-nav ul.main-manu >li{
     text-align: center;
+    display: inline-block;
+    padding-left: 60px;
 }
 /**/
 .my-photo {
-    border: 1px solid white;
+    /*border: 1px solid white;
     width: 38px;
     height: 38px;
-    border-radius: 50%;
+    border-radius: 50%;*/
     /*position: fixed;*/
     margin: 4px;
     overflow: hidden;
+    color: #fff;
+    font-size: 30px;
 }
 
 .my-photo img {
@@ -115,6 +120,7 @@ nav .global-nav ul li ul li{
 nav .global-nav ul li:hover ul.inner-manu li{
     display: block;
     animation: manu-dropdown 600ms ease-in-out forwards;
+    text-align: left;
 }
 
 @keyframes manu-dropdown{
@@ -395,22 +401,6 @@ nav .inner-manu li:first-child{
     height: 1089px;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
-
-@media screen and (max-width: 1030px) {
-    nav .global-nav ul {
-        display: none;
-    }
-
-    .my-photo {
-        position: absolute;
-        right: 0;
-    }
-
-    header nav .hamburger {
-        display: block;
-    }
-}
 
 
 /* Footer start here */
@@ -453,4 +443,23 @@ footer .footer-container ul a {
 footer .footer-social {
     height: 50px;
     background: #000;
+}
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    nav .global-nav ul {
+        display: none;
+    }
+
+    .my-photo {
+        position: absolute;
+        right: 0;
+    }
+
+    header nav .hamburger {
+        display: block;
+    }
 }
