@@ -35,18 +35,18 @@ nav {
         .nav-wrapper {
             display: grid;
             grid-template-columns: 7fr 25fr;
-            margin: auto;
+            margin: -1px auto;
             width: 1000px;
 
             .logo {
                 margin: auto;
                 overflow: hidden;
-                color: inherit;
+                color: white;
                 font-size: 20px;
-                // border: 3px solid #fff;
+                border: 3px solid #fff;
                 padding: 0 20px;
-                background-color: #fff;
-                font-family: 'Pacifico', cursive;
+                // background-color: #fff;
+                font-family: 'Srisakdi', cursive;
 
                 img {
                     height: 50px;
@@ -287,6 +287,11 @@ nav {
 
             .svg {
                 height: 50px;
+                transition: transform .6s;
+
+                :hover {
+                    transform: scale(1.5);
+                }
             }
         }
 
@@ -304,11 +309,13 @@ nav {
             }
 
             .hiw-symble {
+                display: block;
                 height: 200px;
                 width: 200px;
                 border: 1px solid #b4b4b4;
                 border-radius: 50%;
                 margin: auto;
+
             }
         }
     }
@@ -376,6 +383,7 @@ footer {
             h2 {
                 line-height: 60px;
                 font-weight: bold;
+                margin: 0;
             }
         }
     }

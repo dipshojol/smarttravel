@@ -311,18 +311,18 @@ nav {
 nav .global-nav .nav-wrapper {
   display: grid;
   grid-template-columns: 7fr 25fr;
-  margin: auto;
+  margin: -1px auto;
   width: 1000px;
 }
 /* line 41, ../sass/styles.scss */
 nav .global-nav .nav-wrapper .logo {
   margin: auto;
   overflow: hidden;
-  color: inherit;
+  color: white;
   font-size: 20px;
+  border: 3px solid #fff;
   padding: 0 20px;
-  background-color: #fff;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Srisakdi', cursive;
 }
 /* line 51, ../sass/styles.scss */
 nav .global-nav .nav-wrapper .logo img {
@@ -565,19 +565,25 @@ animation-play-state: paused; */
 /* line 288, ../sass/styles.scss */
 .hiw .hiw-wrapper span .svg {
   height: 50px;
+  transition: transform .6s;
 }
-/* line 293, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
+.hiw .hiw-wrapper span .svg :hover {
+  transform: scale(1.5);
+}
+/* line 298, ../sass/styles.scss */
 .hiw .hiw-wrapper .dash {
   margin-top: -15px;
   color: #b4b4b4;
 }
-/* line 300, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 .hiw .hiw-wrapper .hiw-process h3 {
   line-height: 3em;
   font-size: 27px;
 }
-/* line 306, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 .hiw .hiw-wrapper .hiw-process .hiw-symble {
+  display: block;
   height: 200px;
   width: 200px;
   border: 1px solid #b4b4b4;
@@ -585,7 +591,7 @@ animation-play-state: paused; */
   margin: auto;
 }
 
-/* line 317, ../sass/styles.scss */
+/* line 324, ../sass/styles.scss */
 .firstsection {
   position: relative;
   background-repeat: no-repeat;
@@ -595,7 +601,7 @@ animation-play-state: paused; */
   height: 600px;
 }
 
-/* line 326, ../sass/styles.scss */
+/* line 333, ../sass/styles.scss */
 .hi {
   position: absolute;
   top: 50%;
@@ -610,18 +616,18 @@ animation-play-state: paused; */
   /*margin-top: auto; */
 }
 
-/* line 341, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 .paragraph {
   height: 1089px;
 }
 
 /* Footer start here */
-/* line 349, ../sass/styles.scss */
+/* line 356, ../sass/styles.scss */
 footer {
   color: #fff;
   font-family: 'Rajdhani', sans-serif;
 }
-/* line 353, ../sass/styles.scss */
+/* line 360, ../sass/styles.scss */
 footer .footer-container {
   background: #212121;
   display: grid;
@@ -629,29 +635,30 @@ footer .footer-container {
   padding: 75px 0 0 75px;
   height: 300px;
 }
-/* line 360, ../sass/styles.scss */
+/* line 367, ../sass/styles.scss */
 footer .footer-container .footer-inner-container {
   padding: 20px;
   border-right: 1px solid #4a4a4a9c;
   height: 200px;
 }
-/* line 365, ../sass/styles.scss */
+/* line 372, ../sass/styles.scss */
 footer .footer-container .footer-inner-container ul {
   list-style: none;
   font-size: .8em;
 }
-/* line 369, ../sass/styles.scss */
+/* line 376, ../sass/styles.scss */
 footer .footer-container .footer-inner-container ul a {
   text-decoration: none;
   color: #fff;
   line-height: 30px;
 }
-/* line 376, ../sass/styles.scss */
+/* line 383, ../sass/styles.scss */
 footer .footer-container .footer-inner-container h2 {
   line-height: 60px;
   font-weight: bold;
+  margin: 0;
 }
-/* line 383, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 footer .footer-social {
   height: 50px;
   background: #000;
@@ -659,18 +666,18 @@ footer .footer-social {
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 600px) {
-  /* line 392, ../sass/styles.scss */
+  /* line 400, ../sass/styles.scss */
   nav .global-nav ul {
     display: none;
   }
 
-  /* line 396, ../sass/styles.scss */
+  /* line 404, ../sass/styles.scss */
   .logo {
     position: absolute;
     right: 0;
   }
 
-  /* line 401, ../sass/styles.scss */
+  /* line 409, ../sass/styles.scss */
   header nav .hamburger {
     display: block;
   }
